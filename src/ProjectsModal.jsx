@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Styled, { keyframes } from 'styled-components';
 import Projeto1 from './images/projeto1.png';
+import Projeto2 from './images/projeto2.png';
 
 const fadeIn = keyframes`
   from {
@@ -194,9 +195,13 @@ const ProjectsModal = ({ isOpen, onClose }) => {
           </GridItemWrapper>
           <GridItemWrapper>
             <GridItem>
-              <ComingSoonTitle>Em breve...</ComingSoonTitle>
+              <ProjectLink href="https://gihal.com.br" target="_blank">
+                <ProjectImage src={Projeto2} alt="Projeto 2" />
+              </ProjectLink>
             </GridItem>
-            <ProjectTitle>Em breve...</ProjectTitle>
+            <ProjectLink href="https://gihal.com.br" target="_blank">
+              <ProjectTitle>Gihal</ProjectTitle>
+            </ProjectLink>
           </GridItemWrapper>
           <GridItemWrapper>
             <GridItem>
